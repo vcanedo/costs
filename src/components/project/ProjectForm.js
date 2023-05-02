@@ -11,7 +11,9 @@ function ProjectForm() {
       </div>
       <div>
         <select name="category_id">
-          <option disabled>Select Category</option>
+          <option disabled selected>
+            Select Category
+          </option>
         </select>
       </div>
       <div>
