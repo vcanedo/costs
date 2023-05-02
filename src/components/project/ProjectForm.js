@@ -2,7 +2,22 @@
 
 function ProjectForm() {
   return (
-    <h1>projectform</h1>
+    <form>
+      <div>
+        <input type="text" placeholder="Insert project name"/>
+      </div>
+      <div>
+        <input type="number" placeholder="Insert total budget"/>
+      </div>
+      <div>
+        <select name="category_id">
+          <option disabled>Select Category</option>
+        </select>
+      </div>
+      <div>
+        <input type="submit" value="Create Project" />
+      </div>
+    </form>
   )
 
 }
