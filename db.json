@@ -1,5 +1,28 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "name": "asdd",
+      "budget": "123",
+      "category": {
+        "id": "2",
+        "name": "Development"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 1
+    },
+    {
+      "name": "sad",
+      "budget": "123",
+      "category": {
+        "id": "2",
+        "name": "Development"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 2
+    }
+  ],
   "categories": [
     {
       "id": 1,
