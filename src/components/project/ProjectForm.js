@@ -36,7 +36,11 @@ function ProjectForm({btnText}) {
         name="budget"
         placeholder="Insert project's total budget"
       />
-      <Select name="category_id" text="Select category" />
+      <Select
+        name="category_id"
+        text="Select category"
+        options={categories}
+      />
       <SubmitButton text={btnText} />
     </form>
   )
