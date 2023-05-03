@@ -32,7 +32,7 @@ function NewProject() {
       <h1>Create Project</h1>
       <p>Create your project to then add its services</p>
       <p>form</p>
-      <ProjectForm btnText="Create Project" />
+      <ProjectForm handleSubmit={createPost} btnText="Create Project" />
     </div>
   );
 }
