@@ -21,6 +21,28 @@
       "cost": 0,
       "services": [],
       "id": 2
+    },
+    {
+      "category": {
+        "id": "2",
+        "name": "Development"
+      },
+      "budget": "12432565",
+      "name": "aaaasfgggg",
+      "cost": 0,
+      "services": [],
+      "id": 3
+    },
+    {
+      "name": "jjjjjj",
+      "budget": "44411",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 4
     }
   ],
   "categories": [
