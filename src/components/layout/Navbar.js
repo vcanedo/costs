@@ -22,13 +22,10 @@ function Navbar() {
             <Link to="/projects">Projects</Link>
           </li>
           <li className={styles.item}>
-            <Link to="/contact">Contact</Link>
-          </li>
-          <li className={styles.item}>
             <Link to="/company">Company</Link>
           </li>
           <li className={styles.item}>
-            <Link to="/newproject">New Project</Link>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
 
