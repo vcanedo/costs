@@ -1,5 +1,4 @@
-
-
+import { Link } from "react-router-dom";
 
 import styles from "./ProjectCard.module.css";
 
@@ -15,9 +14,13 @@ function ProjectCard({id, name, budget, category, handleRemove}) {
       <p className={styles.category_text}>
         <span className={`${styles[category.toLowerCase()]}`}></span> {category}
       </p>
-      <div>
-        <p>Edit</p>
-        <p>Remove</p>
+      <div className={styles.project_card_actions}>
+        <Link to="/">
+          <BsPencil /> Edit
+        </Link>
+        <button>
+          <BsFillTrashFill /> Delete
+        </button>
       </div>
     </div>
   )
