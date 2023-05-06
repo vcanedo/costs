@@ -44,12 +44,12 @@ function Projects() {
       headers: {
         'Content-Type': 'application/json',
       },
-    }).then(resp => resp.json())
-    .then(data => {
+    }).then((resp) => resp.json())
+    .then((data) => {
       setProjects(projects.filter((project) => project.id !== id))
       setProjectMessage('Project removed successfully')
     })
-    .catch(err => console.log(err))
+    .catch((err) => console.log(err))
   }
 
   return (
