@@ -1,49 +1,26 @@
 {
   "projects": [
     {
-      "name": "asdd",
-      "budget": "123",
-      "category": {
-        "id": "2",
-        "name": "Development"
-
-      },
-      "cost": 0,
-      "services": [],
-      "id": 1
-    },
-    {
-      "name": "sad",
-      "budget": "123",
-      "category": {
-        "id": "2",
-        "name": "Development"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 2
-    },
-    {
-      "category": {
-        "id": "2",
-        "name": "Development"
-      },
-      "budget": "12432565",
-      "name": "aaaasfgggg",
-      "cost": 0,
-      "services": [],
-      "id": 3
-    },
-    {
-      "name": "jjjjjj",
-      "budget": "44411",
+      "name": "asd",
+      "budget": "123123",
       "category": {
         "id": "3",
         "name": "Design"
       },
       "cost": 0,
       "services": [],
-      "id": 4
+      "id": 1
+    },
+    {
+      "name": "asd",
+      "budget": "5654",
+      "category": {
+        "id": "2",
+        "name": "Development"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 3
     }
   ],
   "categories": [
