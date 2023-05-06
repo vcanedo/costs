@@ -56,6 +56,9 @@ function Projects() {
             />
           ))}
         {!removeLoading && <Loading />}
+        {removeLoading && projects.length === 0 && (
+          <p>No projects to show</p>
+        )}
       </Container>
     </div>
   );
