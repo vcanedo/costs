@@ -13,14 +13,14 @@
     },
     {
       "name": "asd",
-      "budget": "124567",
+      "budget": "5654",
       "category": {
-        "id": "4",
-        "name": "Planning"
+        "id": "2",
+        "name": "Development"
       },
       "cost": 0,
       "services": [],
-      "id": 2
+      "id": 3
     }
   ],
   "categories": [
