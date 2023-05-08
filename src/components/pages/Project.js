@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 
 import Loading from "../layout/Loading";
 import Container from "../layout/Container";
+import Message from "../layout/Message";
 import ProjectForm from "../project/ProjectForm";
 
 function Project() {
@@ -12,9 +13,12 @@ function Project() {
 
   const [project, setProject] = useState([])
   const [showProjectForm, setShowProjectForm] = useState(false)
+  const [message, setMessage] = useState()
+  const [type, setType] = useState()
 
   useEffect(() => {
 
+    // GETTING PROJECT BY ID FOR EDITING
     fetch(`http://localhost:5000/projects/${id}`, {
       method: "GET",
       headers: {
@@ -28,7 +32,30 @@ function Project() {
 
   }, [id])
 
-  function editPost() {
+  function editPost(project) {
+    // budget validation
+    if(project.budget < project.cost) {
+      setMessage('Budget cannot be less than utilized budget')
+      setType('error')
+      return false
+    }
+
+    // PATCH REQUEST TO EDIT PROJECT
+    fetch(`http://localhost:5000/projects/${project.id}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(project),
+    })
+    .then((resp) => resp.json())
+    .then((data) => {
+      setProject(data)
+      setShowProjectForm(false)
+      setMessage('Project updated successfully')
+      setType('success')
+    })
+    .catch((err) => console.log(err))
 
   }
 
@@ -41,6 +68,7 @@ function Project() {
       {project.name ? (
         <div className={styles.project_details}>
         <Container customClass="column">
+          {message && <Message type={type} msg={message} />}
           <div className={styles.details_container}>
             <h1>Project: {project.name}</h1>
             <button className={styles.btn} onClick={toggleProjectForm}>
