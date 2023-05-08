@@ -33,6 +33,7 @@ function Project() {
   }, [id])
 
   function editPost(project) {
+    setMessage('')
     // budget validation
     if(project.budget < project.cost) {
       setMessage('Budget cannot be less than utilized budget')
