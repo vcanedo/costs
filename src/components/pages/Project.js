@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 
 import Loading from "../layout/Loading";
 import Container from "../layout/Container";
+import ProjectForm from "../project/ProjectForm";
 
 function Project() {
   const { id } = useParams()
@@ -26,6 +27,10 @@ function Project() {
     .catch((err) => console.log(err))
 
   }, [id])
+
+  function editPost() {
+
+  }
 
   function toggleProjectForm() {
     setShowProjectForm(!showProjectForm)
@@ -55,7 +60,11 @@ function Project() {
               </div>
             ) : (
               <div className={styles.project_info}>
-                <p>form</p>
+                <ProjectForm
+                  handleSubmit={editPost}
+                  btnText="Conclude edit"
+                  projectData={project}
+                />
               </div>
             )}
           </div>
