@@ -5,14 +5,14 @@ import SubmitButton from '../form/SubmitButton';
 
 import styles from '../project/ProjectForm.module.css'
 
-function ServiceForm() {
+function ServiceForm({handleSubmit, btnText, projectData}) {
 
   function submit() {
 
   }
 
-  function handleChange() {
-    
+  function handleChange(e) {
+
   }
 
   return (
@@ -24,6 +24,21 @@ function ServiceForm() {
         placeholder="Insert service name"
         handleOnChange={handleChange}
       />
+      <Input
+        type="number"
+        text="Service cost"
+        name="cost"
+        placeholder="Insert total value"
+        handleOnChange={handleChange}
+      />
+      <Input
+        type="text"
+        text="Service description"
+        name="description"
+        placeholder="Describe the service"
+        handleOnChange={handleChange}
+      />
+      <SubmitButton text={btnText} />
     </form>
   )
 }
