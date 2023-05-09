@@ -18,8 +18,21 @@
         "id": "2",
         "name": "Development"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 573,
+      "services": [
+        {
+          "name": "teste",
+          "cost": "123",
+          "description": "to aqui",
+          "id": "539354f8-fff7-49cf-a9be-d38e87443302"
+        },
+        {
+          "name": "teste2",
+          "cost": "450",
+          "description": "to aqui 2",
+          "id": "bb95455f-49f6-434c-9c85-b3462a624267"
+        }
+      ],
       "id": 3
     }
   ],
