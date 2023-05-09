@@ -16,7 +16,7 @@ function ServiceCard({id, name, cost, description, handelRemove}) {
       <div className={styles.project_card_actions}>
         <button onClick={remove}>
           <BsFillTrashFill />
-          Delete
+          Remove
         </button>
       </div>
     </div>

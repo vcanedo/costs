@@ -99,7 +99,7 @@ function Project() {
     }).then((resp) => resp.json())
     .then((data) => {
       // show services
-      console.log(data);
+      setShowServiceForm(false)
     })
     .catch((err) => console.log(err))
 
