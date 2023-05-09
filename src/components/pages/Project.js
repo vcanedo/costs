@@ -82,6 +82,23 @@ function Project() {
       return false
     }
 
+    // add service cost to project total cost
+    project.cost = newCost
+
+    // update project/PATCH
+    fetch(`http://localhost:5000/projects/${project.id}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(project),
+    }).then((resp) => resp.json())
+    .then((data) => {
+      // show services
+      console.log(data);
+    })
+    .catch((err) => console.log(err))
+
   }
 
   function toggleProjectForm() {
