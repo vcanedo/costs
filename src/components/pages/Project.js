@@ -10,6 +10,7 @@ import Container from "../layout/Container";
 import Message from "../layout/Message";
 import ProjectForm from "../project/ProjectForm";
 import ServiceForm from "../service/ServiceForm";
+import ServiceCard from "../service/ServiceCard";
 
 function Project() {
   const { id } = useParams()
@@ -104,6 +105,8 @@ function Project() {
 
   }
 
+  function removeService() {}
+
   function toggleProjectForm() {
     setShowProjectForm(!showProjectForm)
   }
@@ -162,8 +165,17 @@ function Project() {
           </div>
           <h2>Services</h2>
           <Container customClass="start">
-            {services.length > 0
-
+            {services.length > 0 &&
+              services.map((service) => (
+                <ServiceCard
+                  id={service.id}
+                  name={service.name}
+                  cost={service.cost}
+                  description={service.description}
+                  key={service.id}
+                  handelRemove={removeService}
+                />
+              ))
             }
             {services.length === 0 && <p>There are no assigned services.</p>}
           </Container>
