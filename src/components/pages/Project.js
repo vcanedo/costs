@@ -173,7 +173,7 @@ function Project() {
                   cost={service.cost}
                   description={service.description}
                   key={service.id}
-                  handelRemove={removeService}
+                  handleRemove={removeService}
                 />
               ))
             }
