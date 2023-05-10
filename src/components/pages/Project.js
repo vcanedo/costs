@@ -121,7 +121,13 @@ function Project() {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(projectUpdated),
+    }).then((resp) => resp.json())
+    .then((data) => {
+      setProject(projectUpdated)
+      setServices(servicesUpdated)
+      setMessage('Service removed successfully')
     })
+    .catch((err) => console.log(err))
   }
 
   function toggleProjectForm() {
