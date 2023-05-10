@@ -15,10 +15,10 @@
       "name": "asddd",
       "budget": "565412",
       "category": {
-        "id": "2",
-        "name": "Development"
+        "id": "4",
+        "name": "Planning"
       },
-      "cost": 973,
+      "cost": 8923,
       "services": [
         {
           "name": "teste",
@@ -27,16 +27,16 @@
           "id": "539354f8-fff7-49cf-a9be-d38e87443302"
         },
         {
-          "name": "teste2",
-          "cost": "450",
-          "description": "to aqui 2",
-          "id": "bb95455f-49f6-434c-9c85-b3462a624267"
+          "cost": "4300",
+          "description": "teste",
+          "name": "teste1",
+          "id": "3e3aea80-1c09-436c-9899-a30fba0e9c40"
         },
         {
-          "name": "new service",
-          "cost": "400",
-          "description": "teste",
-          "id": "0c07c547-7563-4cfe-a722-b821a0ca8355"
+          "name": "teste12",
+          "cost": "4500",
+          "description": "to aqui",
+          "id": "d124a9c3-ae73-4999-bd32-51b249fa947e"
         }
       ],
       "id": 3
